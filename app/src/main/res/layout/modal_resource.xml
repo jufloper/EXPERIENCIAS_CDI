@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_linear_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rl"
+
+        app:srcCompat="@drawable/emanuel_color" />
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_linear_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name">
+
+
+        <ImageView
+            android:id="@+id/play_circle"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:foregroundGravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/circuloexterno" />
+
+        <ImageView
+            android:id="@+id/play_circle2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignStart="@+id/play_circle"
+            android:layout_alignTop="@+id/play_circle"
+            android:layout_alignBottom="@+id/play_circle"
+            android:layout_alignEnd="@+id/play_circle"
+            android:foregroundGravity="center_horizontal"
+            app:srcCompat="@drawable/circulomedio" />
+
+        <ImageView
+            android:id="@+id/play_circle3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignStart="@+id/play_circle"
+            android:layout_alignTop="@+id/play_circle"
+            android:layout_alignEnd="@+id/play_circle"
+            android:layout_alignBottom="@+id/play_circle"
+            android:foregroundGravity="center_horizontal"
+            app:srcCompat="@drawable/circulointerno" />
+
+        <ImageView
+            android:id="@+id/kid_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/emanuel" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="-40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@id/play_button"
+        app:layout_constraintEnd_toEndOf="@id/rl"
+        app:layout_constraintTop_toBottomOf="@id/rl"
+        app:layout_constraintBottom_toBottomOf="@id/rl"
+        app:srcCompat="@drawable/boton_stop" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="-40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="@id/rl"
+        app:layout_constraintEnd_toStartOf="@id/stop_button"
+        app:layout_constraintTop_toBottomOf="@id/rl"
+        app:layout_constraintBottom_toBottomOf="@id/rl"
+        app:srcCompat="@drawable/boton_pause" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

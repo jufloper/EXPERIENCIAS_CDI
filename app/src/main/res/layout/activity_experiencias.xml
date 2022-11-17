@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Experiencias">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-155dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/recurso2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topbar" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="-190dp"
+        android:layout_marginEnd="-200dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/bottomcircle" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="-159dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/bottomtransparent" />
+
+    <ImageView
+        android:id="@+id/c_gabriela"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toStartOf="@+id/c_emiliana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/c_emiliana"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/c_emiliana"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/c_emanuel"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c_emiliana"
+        app:layout_constraintStart_toEndOf="@+id/c_gabriela"
+        app:layout_constraintTop_toBottomOf="@+id/c_emiliana"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/c_isaac"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c_sami"
+        app:layout_constraintStart_toEndOf="@+id/c_emiliana"
+        app:layout_constraintTop_toBottomOf="@+id/c_emiliana"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/c_sami"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c_emiliana"
+        app:layout_constraintTop_toTopOf="@+id/c_emiliana"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageButton
+        android:id="@+id/emanuel"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/c_emanuel"
+        app:layout_constraintEnd_toEndOf="@+id/c_emanuel"
+        app:layout_constraintStart_toStartOf="@+id/c_emanuel"
+        app:layout_constraintTop_toTopOf="@+id/c_emanuel"
+        app:srcCompat="@drawable/emanuel" />
+
+    <ImageButton
+        android:id="@+id/gabriela"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/c_gabriela"
+        app:layout_constraintEnd_toEndOf="@+id/c_gabriela"
+        app:layout_constraintStart_toStartOf="@+id/c_gabriela"
+        app:layout_constraintTop_toTopOf="@+id/c_gabriela"
+        app:srcCompat="@drawable/gabriela" />
+
+    <ImageButton
+        android:id="@+id/sami"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/c_sami"
+        app:layout_constraintEnd_toEndOf="@+id/c_sami"
+        app:layout_constraintStart_toStartOf="@+id/c_sami"
+        app:layout_constraintTop_toTopOf="@+id/c_sami"
+        app:srcCompat="@drawable/sami" />
+
+    <ImageButton
+        android:id="@+id/isaac"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/c_isaac"
+        app:layout_constraintEnd_toEndOf="@+id/c_isaac"
+        app:layout_constraintStart_toStartOf="@+id/c_isaac"
+        app:layout_constraintTop_toTopOf="@+id/c_isaac"
+        app:srcCompat="@drawable/isaac" />
+
+    <ImageButton
+        android:id="@+id/emiliana"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/c_emiliana"
+        app:layout_constraintEnd_toEndOf="@+id/c_emiliana"
+        app:layout_constraintStart_toStartOf="@+id/c_emiliana"
+        app:layout_constraintTop_toTopOf="@+id/c_emiliana"
+        app:srcCompat="@drawable/emiliana" />
+
+    <ImageButton
+        android:id="@+id/btn_gabriela"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        android:scaleType="centerInside"
+        android:background="#00FFFFFF"
+
+        app:layout_constraintEnd_toEndOf="@+id/gabriela"
+        app:layout_constraintStart_toStartOf="@+id/gabriela"
+        app:layout_constraintTop_toBottomOf="@+id/gabriela"
+        app:srcCompat="@drawable/greenbutton" />
+
+    <ImageButton
+        android:id="@+id/btn_isaac"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        android:scaleType="centerInside"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/isaac"
+        app:layout_constraintStart_toStartOf="@+id/isaac"
+        app:layout_constraintTop_toBottomOf="@+id/isaac"
+        app:srcCompat="@drawable/bluebutton" />
+    <ImageButton
+        android:id="@+id/btn_emiliana"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        android:scaleType="centerInside"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/emiliana"
+        app:layout_constraintStart_toStartOf="@+id/emiliana"
+        app:layout_constraintTop_toBottomOf="@+id/emiliana"
+        app:srcCompat="@drawable/pinkbutton" />
+    <ImageButton
+        android:id="@+id/btn_sami"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        android:scaleType="centerInside"
+        android:background="#00FFFFFF"
+
+        app:layout_constraintEnd_toEndOf="@+id/sami"
+        app:layout_constraintStart_toStartOf="@+id/sami"
+        app:layout_constraintTop_toBottomOf="@+id/sami"
+        app:srcCompat="@drawable/yellowbuton" />
+    <ImageButton
+        android:id="@+id/btn_emanuel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        android:scaleType="centerInside"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/emanuel"
+        app:layout_constraintStart_toStartOf="@+id/emanuel"
+        app:layout_constraintTop_toBottomOf="@+id/emanuel"
+        app:srcCompat="@drawable/purplebutton" />
+    <ImageView
+        android:id="@+id/txt_emanuel"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="@+id/emanuel"
+        app:layout_constraintStart_toStartOf="@+id/emanuel"
+        app:layout_constraintTop_toBottomOf="@+id/emanuel"
+        app:srcCompat="@drawable/emanueltxt" />
+    <ImageView
+        android:id="@+id/txt_isaac"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="@+id/isaac"
+        app:layout_constraintStart_toStartOf="@+id/isaac"
+        app:layout_constraintTop_toBottomOf="@+id/isaac"
+        app:srcCompat="@drawable/isaactxt" />
+    <ImageView
+        android:id="@+id/txt_gabriela"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="@+id/gabriela"
+        app:layout_constraintStart_toStartOf="@+id/gabriela"
+        app:layout_constraintTop_toBottomOf="@+id/gabriela"
+        app:srcCompat="@drawable/gabrielatxt" />
+
+    <ImageView
+        android:id="@+id/txt_emiliana"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="@+id/emiliana"
+        app:layout_constraintStart_toStartOf="@+id/emiliana"
+        app:layout_constraintTop_toBottomOf="@+id/emiliana"
+        app:srcCompat="@drawable/emilianatxt" />
+    <ImageView
+        android:id="@+id/txt_sami"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintEnd_toEndOf="@+id/sami"
+        app:layout_constraintStart_toStartOf="@+id/sami"
+        app:layout_constraintTop_toBottomOf="@+id/sami"
+        app:srcCompat="@drawable/samitxt" />
+
+    <ImageButton
+        android:id="@+id/btn_start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c_isaac"
+        app:layout_constraintStart_toEndOf="@+id/c_emanuel"
+        app:srcCompat="@drawable/start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
